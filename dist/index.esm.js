@@ -1,0 +1,1 @@
+import{isNumber as r,isObject as t}from"lodash/fp";import{isEqualApproxNum as o}from"is-equal-approx";const e=(r,t=2)=>{if(0===r)return 0;t=Math.pow(10,t);const e=Math.round(r*t)/t;return o(e,r,1e-8)?e:r},n=(o,f)=>{if(r(o))return e(o,f);if(t(o)){for(const r in o)o[r]=n(o[r],f);return o}return o};export default n;export{n as approxFix,e as approxFixNum};
