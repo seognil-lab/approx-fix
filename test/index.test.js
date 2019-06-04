@@ -3,6 +3,13 @@ const { approxFixNum, approxFix } = require('../dist/index.cjs');
 
 describe('approxFixNum', () => {
     it('number', () => {
+        checkEqual(approxFix(0.12301, 3), 0.12301); // => 0.12301
+        checkEqual(approxFix(0.1230000001, 3), 0.123); // => 0.123
+    });
+});
+
+describe('approxFixNum', () => {
+    it('number', () => {
         checkEqual(approxFixNum(0.120000000000001), 0.12);
         checkEqual(approxFixNum(272.00000000000006), 272);
     });

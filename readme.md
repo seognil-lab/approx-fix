@@ -36,6 +36,8 @@ approxFix([0.1 + 0.2]); // => [0.3]
 // * default is approxFix
 import approxFix from 'approx-fix';
 approxFix(0.1 + 0.2); // => 0.3
+approxFix(0.12301, 3); // => 0.12301
+approxFix(0.1230000001, 3); // => 0.123
 ```
 
 ---
