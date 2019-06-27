@@ -1,5 +1,5 @@
 const { checkEqual } = require('@seognil-lab/chai-helper');
-const { approxFixNum, approxFix } = require('../dist/index.cjs');
+const { approxFixNum, approxFix } = require('../dist');
 
 describe('approxFixNum', () => {
     it('number', () => {
